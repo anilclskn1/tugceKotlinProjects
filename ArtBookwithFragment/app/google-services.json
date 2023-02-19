@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "444532529570",
+    "project_id": "artbookwithfragment-1fa62",
+    "storage_bucket": "artbookwithfragment-1fa62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444532529570:android:f6571019078fa63412bafb",
+        "android_client_info": {
+          "package_name": "com.tugceozcakir.artbookwithfragment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444532529570-h34e5iqgsd9n5l90hsaj26hf01o274nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO45LIKKCTWkoRHhnZJXK7VLZSI4Z84IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444532529570-h34e5iqgsd9n5l90hsaj26hf01o274nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

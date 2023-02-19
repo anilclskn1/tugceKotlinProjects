@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="selectedFood"
+            type="com.tugceozcakir.foodbookapp.model.Food" />
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FoodDetailFragment">
+
+    <ImageView
+        android:id="@+id/detailFoodImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="220dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"
+        android:downloadImage="@{selectedFood.image}" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{selectedFood.name}"
+        android:id="@+id/foodName"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/detailFoodImageView"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/foodName"
+        android:id="@+id/foodCalories"
+        android:text="@{selectedFood.calories}" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/foodCalories"
+        android:id="@+id/foodCarbohydrate"
+        android:text="@{selectedFood.carbohydrate}" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/foodCarbohydrate"
+        android:id="@+id/foodProtein"
+        android:text="@{selectedFood.protein}" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/foodProtein"
+        android:id="@+id/foodOil"
+        android:text="@{selectedFood.oil}" />
+
+
+
+</RelativeLayout>
+</layout>

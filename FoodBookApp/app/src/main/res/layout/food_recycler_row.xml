@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="food"
+            type="com.tugceozcakir.foodbookapp.model.Food" />
+        <variable
+            name="listener"
+            type="com.tugceozcakir.foodbookapp.adapter.FoodClickListener" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:onClick="@{listener::clickedFood}"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/foodUuid"
+            android:text="@{String.valueOf(food.uuid)}" />
+
+        <ImageView
+        android:id="@+id/foodImageView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_weight="2"
+            android:downloadImage="@{food.image}" />
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{food.name}"
+            android:id="@+id/foodNameText"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:id="@+id/foodCaloriesText"
+            android:text="@{food.calories}" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

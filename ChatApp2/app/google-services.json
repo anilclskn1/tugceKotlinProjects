@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "77122956887",
+    "project_id": "chat-app-a03e5",
+    "storage_bucket": "chat-app-a03e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77122956887:android:3e77b483f9b4b9b9d13d12",
+        "android_client_info": {
+          "package_name": "com.tugceozcakir.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77122956887-jhk30c187s6shfgfpbs18qnpfqd9109b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxteyExBKM-lnrK7Ci2L0TdwPSJEVSKf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77122956887-jhk30c187s6shfgfpbs18qnpfqd9109b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
